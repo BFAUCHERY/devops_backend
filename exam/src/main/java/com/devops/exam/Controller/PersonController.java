@@ -2,6 +2,7 @@ package com.devops.exam.Controller;
 
 import com.devops.exam.Entity.Person;
 import com.devops.exam.Repository.PersonRepository;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/persons")
+@CrossOrigin(origins = "*")
 public class PersonController {
 	
 	private final PersonRepository personRepository;
