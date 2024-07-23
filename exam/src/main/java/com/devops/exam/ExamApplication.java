@@ -22,9 +22,7 @@ public class ExamApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
 						.allowedOrigins("http://192.168.163.136/") // Permettre toutes les origines
-						.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-						.allowedHeaders("*")
-						.allowCredentials(true);
+						.allowedMethods("GET", "POST", "PUT", "DELETE");
 			}
 		};
 	}
